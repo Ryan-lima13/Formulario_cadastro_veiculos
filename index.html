@@ -10,7 +10,134 @@
 <body>
     <div class="Container">
         <div>
-            <h1>Cadastre  seu Veículo para vender mais rápido! </h1>
+            <h1>Cadastre  seu veículo para vender mais rápido! </h1>
+
+        </div>
+        <div class="form-container">
+            <div class="form-head">
+                <p>Cadastro</p>
+
+            </div>
+            <div class="form-body">
+                <h2>Venda fácil seu veículo!</h2>
+                <p>Descreva as características do seu veículo e marque todas as opções e características que ele possui. </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúcio:<span class="required-fiel">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Defina o título para seu veículo" minlength="1" maxlength="30" required>
+                        
+
+                    </div>
+                    <div class="box-input">
+                        <label for="preco">Preço:<span class="required-fiel">*</span></label>
+                        <input type="number" name="preco" id="preco" class="block">
+
+                    </div>
+                    <div class="box-input">
+                        <label for="">Descrição:<spam class="required-fiel">*</spam></label>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" class="block" required placeholder="Descreva seu veículo"></textarea>
+
+
+                    </div>
+                    <div class="box-input">
+                        <label for="">Único dono?<span class="required-fiel">*</span></label>
+                        <select name="" id="" required>
+                            <option value="">Selecione...</option>
+                            <option value="1">Sim</option>
+                            <option value="0">Não</option>
+
+                        </select>
+
+                    </div>
+                    <div class="box-input">
+                        <label for="marca">Marca:<span class="required-fiel">*</span> </label>
+                        <input type="text" name="marca" id="marca" class="block" placeholder="Digite a marca do seu veículo" required>
+
+                    </div>
+                    <div class="box-input">
+                        <label for="modelo">Modelo:<span class="required-fiel">*</span></label>
+                        <input type="text" name="modelo" id="modelo" placeholder="Digite o modelo so seu veículo" required class="block">
+
+                    </div>
+                    <div class="box-input">
+                        <label for="quilometragem">Quilometragem:<span class="required-fiel">*</span></label>
+                        <input type="number" name="quilometragem" id="quilometragem" required class="block">
+
+                    </div>
+                    <div class="box-input">
+                        <label for="compra"> Data de Compra do veículo:<span class="required-fiel">*</span></label>
+                        <input type="date" name="data" id="data" class="block">
+
+                    </div>
+                    <div class="box-input">
+                        <p>Câmbio:<span class="required-fiel">*</span></p>
+                        <input type="radio" name="manual" id="manual">
+                        <label for="manual">Manual</label>
+                        <input type="radio" name="auto" id="auto">
+                        <label for="auto">Automático</label>
+
+
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="opcional-list">
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="airbarg" value="airbag">
+                                <label for="airbag">airbag</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="alarme" value="alarme">
+                                <label for="alarme">alarme</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="ac" value="ac">
+                                <label for="airbag">ar-condicionado</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="eletrica" value="eletrica">
+                                <label for="eletrica">Trava elétrica</label>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="optional-box">
+                        
+                        <ul class="opcional-list">
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="janela" value="janela">
+                                <label for="janela">Vidro elétrico</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="som" value="som">
+                                <label for="som">som</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="re" value="re">
+                                <label for="re">Câmera de Ré</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="opcional[]" id="couro" value="couro">
+                                <label for="couro">Banco de couro</label>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="box-input">
+                        <p>Enviar imagem do veículo:<span class="required-fiel">*</span> </p>
+                        <input type="file" name="images" id="images" multiple accept="image/png, image/jpeg" required>
+                        
+
+
+                    </div>
+                    <input type="submit" value="Cadastrar" class="btn-submit" >
+
+
+                </form>
+
+            </div>
+
 
         </div>
 
